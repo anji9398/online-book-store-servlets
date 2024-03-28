@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="Abutton.css">
+<title>Adding Book Details</title>
+ <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        form {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"],button {
+            background-color: #4caf50;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        
+       .div{
+		   margin-left: 30%;
+		   margin-right: 30%;
+		   padding-top: 2%;
+	   }
+    </style>
+</head>
+<body>
+	<div class="button-container">
+	<a href="Login.jsp" >Back</a>
+	</div>
+	<div class="div">
+    <form action="addBook" method="post">
+		<label for="bookCode">Book Code:</label>
+		<input type="text" name="code" required><br>
+        
+        <label for="bookName">Book Name:</label>
+        <input type="text" name="name" required><br>
+        
+         <label for="bookAuthor">Book Author:</label>
+         <input type="text" name="author" required><br>
+        
+        <label for="bookPrice">Book Price:</label>
+        <input type="text" name="price" required pattern="\d+"><br>
+        
+        <label for="bookQty">Book Quantity:</label>
+        <input type="text" name="qty" required pattern="\d+"><br>
+		
+		<input type="submit" name="AddBook" value="Submit"><br>
+	
+	<div class="button-container">	
+	<a href="ViewAllBooks">viewBookDetails</a>
+    <a href="Logout">Logout</a>
+    </div>
+	</form>
+	</div>
+	<br>
+</body>
+</html>

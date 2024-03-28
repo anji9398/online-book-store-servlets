@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Customer Registration  </title>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+
+        form {
+            background-color: #fff;
+            border-radius: 2px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"],button {
+            background-color: #4caf50;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        
+        .button-container a {
+            display: inline-block;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 14px;
+            padding: 10px 20px;
+            margin: 10px;
+            border: 2px solid #4caf50;
+            color: #4caf50;
+            border-radius: 4px;
+            transition: background-color 0.3s, color 0.3s;
+            text-align: center;
+        }
+
+        .button-container a:hover {
+            background-color: #4caf50;
+            color: #fff;
+        } 
+        
+    </style>
+
+</head>
+<body>
+    <form action="cReg" method="post"> 
+		<h2>Customer Registration</h2>
+		User name :<input type="text" name="name" placeholder="Enter User name" required><br>
+		Password :<input type="password" name="pass" placeholder=" Enter Password" required><br>
+		First Name :<input type="text" name="fname" placeholder="Enter First Name " required><br>
+		Last name :<input type="text" name="lname" placeholder="Enter Last Name " required><br>
+		Address :<input type="text" name="adds" placeholder="Enter Address " required><br>
+		Mail ID :<input type="email" name="mail" placeholder="Enter Mail  Id " required><br>
+		Phone number :<input type="text" name="phno" placeholder="Enter Phone Number" required><br>
+		<input type="submit" value="Register"><br>
+		<div class="button-container">
+		<a href="CLogout">Logout</a>
+		</div>
+	</form>
+</body>
+</html>

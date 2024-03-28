@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="Abutton.css">
+<style>
+	div
+	{
+		text-align: center; 
+		border: solid;
+		margin: 10%;
+		margin-left: 25%;
+		margin-right: 25%;
+		background-color: white;
+		border-color:white;
+	    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	    padding: 2%;
+	}
+img
+{
+   border-radius: 50%;
+   width: 70px;
+}
+
+ 
+
+input[type=text],input[type=password]  {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid rgb(0, 128, 0);
+}
+
+.c
+{
+	border-radius: 4px;
+	background-color: white;
+    color: black;
+    border: 2px solid #04AA6D; /* Green */
+    transition-duration: 0.4s;
+    background-color: #04AA6D; /* Green */
+    color: white;
+    width: 250px;
+     padding: 16px 32px;
+  }
+.button2:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+body
+{
+   background-color: lightpink;
+}
+
+.button2:hover {
+  background-color: rgb(64, 170, 72);
+}
+h2{
+	margin-left: 10%;
+} 
+
+</style>
+<title>Admin Login</title>
+</head>
+<body>
+	
+	
+ <div style="color:#04AA6D">
+		 
+		 <a href="home.html" style="margin-left: 60%;">Home</a>
+	<h4 id="current" style="margin-left: 60%; color: royalblue;"></h4>
+	<script>
+     let time = document.getElementById("current");
+     setInterval(() =>{
+	 let d = new Date();
+	 time.innerHTML = d.toLocaleTimeString();
+	 },1000)
+    </script>
+    
+	<h2 style="font-style: italic;">Admin Login</h2>
+	<img src="unauthorized-person.png">	
+    <form action="alogin" method="post" >
+	  
+	   <input type="text" name="uname" placeholder="Enter User Name" required><br>
+	   <br>
+	   <input type="password" name="pass" placeholder="Password" required><br>
+	   <br>
+	   <input type="submit" value="Login" class="c button2">
+	   
+    </form>
+   
+ </div>
+</body>
+</html>
